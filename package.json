@@ -1,0 +1,73 @@
+{
+	"name": "leo",
+	"version": "0.0.0",
+	"description": "Create a lazy HTML element every time you scroll on the last element of a HTML container.",
+	"main": "lib/index.js",
+	"files": [
+		"umd/"
+	],
+	"author": "luctst",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://www.github.com/luctst/Leo"
+	},
+	"bugs": {
+		"url": "https://www.github.com/luctst/Leo/issues"
+	},
+	"homepage": "https://www.github.com/luctst/Leo",
+	"engines": {
+		"node": ">= 10.0.0"
+	},
+	"eslintIgnore": [
+		"lib/build/",
+		"umd/"
+	],
+	"ava": {
+		"cache": true
+	},
+	"np": {
+		"yarn": false,
+		"contents": "lib"
+	},
+	"keywords": [
+		"node",
+		"browser",
+		"leo",
+		"js",
+		"HTML",
+		"Element"
+	],
+	"scripts": {
+		"build-lib": "./node_modules/.bin/babel ./lib/main.js -o ./umd/leo.client.min.js",
+		"test": "ava --verbose ./test/*.js",
+		"test:watch": "ava --watch --verbose --fail-fast ./test/*.js",
+		"lint": "npx eslint --cache './lib/**/*.js'",
+		"lint:watch": "esw -w --clear --color --cache './lib/**/*.js'",
+		"lint:fix": "npx eslint --fix './lib/**/*.js'",
+		"style": "prettier -c './lib/**/*.js'",
+		"style:fix": "prettier --c --write './lib/**/*.js'",
+		"release": "np"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.11.6",
+		"@babel/core": "^7.11.6",
+		"@babel/polyfill": "^7.11.5",
+		"@babel/preset-env": "^7.11.5",
+		"ava": "^3.12.1",
+		"babel-preset-minify": "^0.5.1",
+		"browser-env": "^3.3.0",
+		"eslint": "^7.9.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-watch": "^7.0.0",
+		"prettier": "^2.1.2",
+		"@babel/cli": "^7.11.6",
+		"@babel/core": "^7.11.6",
+		"@babel/polyfill": "^7.11.5",
+		"@babel/preset-env": "^7.11.5",
+		"np": "^6.5.0"
+	}
+}
