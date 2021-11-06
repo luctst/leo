@@ -45,7 +45,7 @@
 ## Install 🐙
 Add this script in your HTML to access Leo.
 ```
-<script crossorigin src="https://unpkg.com/@luctst/Leo/umd/leo.client.min.js"></script>
+<script crossorigin src="https://unpkg.com/leoo@1.0.0/umd/leo.client.min.js"></script>
 ```
 
 ## Exemples 🖍
