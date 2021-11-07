@@ -76,7 +76,7 @@ new Leo("main", [
 ## API 👩‍💻
 Once you include the script you can access the Leo class.
 
-### Class `new Leo(container, ops)`.
+### Class `new Leo(container, ops, [options])`.
 The leo class allow you to create lazy HTML elements.
 
 * `container` [<string>](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String) - The container where the elements would be create, can be an HTML tag, class or id.
@@ -84,6 +84,8 @@ The leo class allow you to create lazy HTML elements.
   * `class` [<array>](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array) - An array of class to add to your new HTML element.
   * `template` [<string>](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String) - The inner html of your html.
   * `htmlContainer` [<string>](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String) - The HTML tag of your new element.
+* `[options]` - Object option
+  * `[options.infinite]` **default -> false** - If true recreate infinitely elements.
 
 ## License ⚖️
 @MIT
